@@ -8,6 +8,7 @@
     - configure-server
     - supervisor
     - postgres
+    - postgres-server
     - redis
     - django-application
     - django-static
@@ -15,3 +16,21 @@
     - celery
     - celery-beat
     - nginx
+- hosts: web
+  become: yes
+  roles:
+    - common-vars
+    - covercore-common
+    - secrets
+    - configure-server
+    - supervisor
+    - postgres
+    - redis
+    - django-application
+    - django-static
+    - django-runserver
+    - celery
+    - celery-beat
+    - nginx
+    - aws-cli
+    - database-s3-dump

@@ -1,9 +1,9 @@
 [production]
-myproductionserver.com
+api.covercore.com
 
 [dev]
-mydevserver.com
+dev-api.covercore.com
 
-[all_in_one]
-myproductionserver.com
-mydevserver.com
+[web]
+dev-api.covercore.com
+api.covercore.com
