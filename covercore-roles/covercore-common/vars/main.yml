@@ -1,0 +1,5 @@
+---
+project_name: covercore
+django_app_git_url: git@github.com:pronym-inc/covercore.git
+django_app_extra_apt_dependencies:
+  - libcurl4-nss-dev
